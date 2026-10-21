@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Men's Collection | R.P.R Textile</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fa;
+    color: #152342;
+}
+
+/* Header */
+header {
+    background: #071d49;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    font-size: clamp(25px, 4vw, 38px);
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 8px;
+    color: #dce8ff;
+}
+
+/* Heading */
+.heading {
+    text-align: center;
+    padding: 35px 15px 25px;
+}
+
+.heading h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.heading p {
+    color: #65718a;
+}
+
+/* Items Grid */
+.items {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto 45px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+/* Product Category Card */
+.item {
+    display: block;
+    text-decoration: none;
+    color: #152342;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.09);
+    transition: 0.25s;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.16);
+}
+
+.item img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.item h3 {
+    text-align: center;
+    padding: 18px 8px;
+    font-size: 19px;
+}
+
+/* Footer */
+footer {
+    background: #071d49;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.home-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 24px;
+    background: white;
+    color: #071d49;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+    .items {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .item img {
+        height: 200px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .items {
+        gap: 12px;
+    }
+
+    .item img {
+        height: 145px;
+    }
+
+    .item h3 {
+        font-size: 15px;
+        padding: 14px 4px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>R.P.R TEXTILE</h1>
+    <p>Men's Fashion Collection</p>
+</header>
+
+<section class="heading">
+   
+</section>
+
+<main class="items">
+
+    <!-- 1. T-Shirts -->
+    <a href="tshirts.html" class="item">
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80"
+             alt="Men's T-Shirts">
+        <h3>T-Shirts</h3>
+    </a>
+
+    <!-- 2. Shirts -->
+    <a href="shirts.html" class="item">
+        <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=700&q=80"
+             alt="Men's Shirts">
+        <h3>Shirts</h3>
+    </a>
+
+    <!-- 3. Jeans -->
+    <a href="jeans.html" class="item">
+        <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=700&q=80"
+             alt="Men's Jeans">
+        <h3>Jeans</h3>
+    </a>
+
+    <!-- 4. Trousers -->
+    <a href="trousers.html" class="item">
+        <img src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=700&q=80"
+             alt="Men's Trousers">
+        <h3>Trousers</h3>
+    </a>
+
+    <!-- 5. Hoodies and Jackets -->
+    <a href="hoodies-jackets.html" class="item">
+        <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=700&q=80"
+             alt="Hoodies and Jackets">
+        <h3>Hoodies and Jackets</h3>
+    </a>
+
+    <!-- 6. Shorts -->
+    <a href="shorts.html" class="item">
+        <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=700&q=80"
+             alt="Men's Shorts">
+        <h3>Shorts</h3>
+    </a>
+
+    <!-- 7. Innerwear -->
+    <a href="innerwear.html" class="item">
+        <img src="innerwear.jpg"
+             alt="Men's Innerwear">
+        <h3>Innerwear</h3>
+    </a>
+
+</main>
+
+<footer>
+    <p>© 2026 R.P.R Textile. All Rights Reserved.</p>
+    <a href="next.html" class="home-btn">Back to Categories</a>
+</footer>
+
+</body>
+</html>
